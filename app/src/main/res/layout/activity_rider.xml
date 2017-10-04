@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.technical.finallyuber.MainActivity">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:map="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/map"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.technical.finallyuber.RiderActivity"/>
+
+
+    <Button
+        android:id="@+id/callUberButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="13dp"
+        android:onClick="callUber"
+        android:text="Call Uber"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/callUberButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:onClick="logout"
+        android:text="Logout"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/infoLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/callUberButton"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:text="Your Driver"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
